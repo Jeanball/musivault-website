@@ -200,9 +200,13 @@
                     <p>Get up and running in less than 2 minutes.</p>
 
                     <div class="code-block-wrapper">
-                        <pre><code id="install-code">git clone https://github.com/Jeanball/musivault.git
-cd musivault
-docker compose up -d</code></pre>
+                        <pre><code id="install-code">
+                            Create discogs account to have an api key
+                            git clone https://github.com/Jeanball/musivault.git
+                            cd musivault
+                            cp env.example .env and fill it with your api key
+                            docker compose up -d
+                            </code></pre>
                         <button class="btn-copy" aria-label="Copy code">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
@@ -233,7 +237,8 @@ docker compose up -d</code></pre>
                 <a href="https://discogs.com" target="_blank">Discogs</a>
             </div>
             <div class="copyright">
-                &copy; <span id="year"></span> Musivault. MIT License.
+                &copy; <span id="year"></span> Musivault. MIT License. Created by <a
+                    href="https://github.com/Jeanball">Jeanball</a>
             </div>
         </div>
     </footer>
