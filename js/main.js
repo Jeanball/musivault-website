@@ -2,6 +2,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Fetch latest version from GitHub
+    async function fetchLatestVersion() {
+        const versionBadge = document.getElementById('app-version');
+        const repo = 'Jeanball/musivault';
+
+        try {
+            // Priority 1: GitHub Releases
+            let response = await fetch(`https://api.github.com/repos/${repo}/releases/latest`);
+
+            if (response.ok) {
+                const data = await response.json();
+                versionBadge.textContent = `${data.tag_name} Now Available`;
+                return;
+            }
+
+            // Priority 2: package.json from main branch
+            response = await fetch(`https://raw.githubusercontent.com/${repo}/main/package.json`);
+
+            if (response.ok) {
+                const data = await response.json();
+                versionBadge.textContent = `v${data.version} Now Available`;
+                return;
+            }
+
+            // Fallback
+            versionBadge.textContent = 'v1.0.0 Now Available';
+
+        } catch (error) {
+            console.error('Error fetching version:', error);
+            versionBadge.textContent = 'v1.0.0 Now Available';
+        }
+    }
+
+    fetchLatestVersion();
+
     // Copy to clipboard functionality
     const copyBtn = document.querySelector('.btn-copy');
     const codeBlock = document.getElementById('install-code');
