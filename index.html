@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musivault - Your Music Collection, Reimagined</title>
+    <meta name="description" content="A beautiful, self-hosted web application to catalog and explore your vinyl & CD collection with Discogs integration.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/icon-musivault.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <header class="navbar glass">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo/icon-musivault.svg" alt="Musivault">
+                <span>Musivault</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#tech">Tech Stack</a></li>
+                    <li><a href="https://github.com/Jeanball/musivault" target="_blank" class="btn btn-sm btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero text-center">
+            <div class="container">
+                <div class="hero-content fade-in-up">
+                    <div class="badge-pill">v1.0.0 Now Available</div>
+                    <h1>Your Music Collection, <span class="gradient-text">Reimagined</span></h1>
+                    <p class="lead">A beautiful, self-hosted sanctuary for your vinyl & CD collection. Powered by Discogs, built for collectors.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#quick-start" class="btn btn-primary btn-lg">Get Started</a>
+                        <a href="https://github.com/Jeanball/musivault" target="_blank" class="btn btn-secondary btn-lg">View Source</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper fade-in-up delay-1">
+                    <img src="assets/screenshots/collection-dashboard.png" alt="Musivault Dashboard" class="main-screenshot glass">
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="features section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Everything You Need</h2>
+                    <p>Powerful tools to manage your growing library.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card glass fade-in-up delay-1">
+                        <div class="icon-box">🎵</div>
+                        <h3>Discogs Integration</h3>
+                        <p>Seamlessly connect with Discogs to sync your collection, fetch metadata, and find release values instantly.</p>
+                    </div>
+                    
+                    <div class="feature-card glass fade-in-up delay-2">
+                        <div class="icon-box">📊</div>
+                        <h3>Smart Insights</h3>
+                        <p>Visualise your listening habits with beautiful charts. Track formats, genres, and collection value over time.</p>
+                    </div>
+                    
+                    <div class="feature-card glass fade-in-up delay-3">
+                        <div class="icon-box">🔍</div>
+                        <h3>Advanced Search</h3>
+                        <p>Filter by format, pressing year, date added, or genre. Find that specific record in seconds.</p>
+                    </div>
+                    
+                    <div class="feature-card glass fade-in-up delay-1">
+                        <div class="icon-box">🔐</div>
+                        <h3>Private & Secure</h3>
+                        <p>Self-hosted on your own hardware. Your data stays yours, with multi-user support for the whole household.</p>
+                    </div>
+                    
+                    <div class="feature-card glass fade-in-up delay-2">
+                        <div class="icon-box">📱</div>
+                        <h3>Mobile Ready</h3>
+                        <p>Fully responsive design that looks stunning on your phone, tablet, or desktop workstation.</p>
+                    </div>
+                    
+                    <div class="feature-card glass fade-in-up delay-3">
+                        <div class="icon-box">🐳</div>
+                        <h3>Dockerized</h3>
+                        <p>Deploy in minutes with a single docker-compose command. Updates are just a pull away.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section id="gallery" class="gallery section-padding bg-darker">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2>Beautiful by Design</h2>
+                    <p>A user interface that puts your artwork front and center.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-carousel-wrapper">
+                <div class="gallery-track">
+                    <div class="gallery-item glass">
+                        <img src="assets/screenshots/collection-grid-view.png" alt="Grid View">
+                        <div class="caption">Immersive Grid View</div>
+                    </div>
+                    <div class="gallery-item glass">
+                        <img src="assets/screenshots/album-detail.png" alt="Album Details">
+                        <div class="caption">Rich Album Details</div>
+                    </div>
+                    <div class="gallery-item glass">
+                        <img src="assets/screenshots/search-add.png" alt="Easy Search">
+                        <div class="caption">Global Search</div>
+                    </div>
+                    <div class="gallery-item glass">
+                        <img src="assets/screenshots/settings.png" alt="Customization">
+                        <div class="caption">Customization</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH STACK -->
+        <section id="tech" class="tech-stack section-padding">
+            <div class="container text-center">
+                <h2>Built on Modern Tech</h2>
+                <div class="tech-grid fade-in-up">
+                    <div class="tech-item">
+                        <span class="tech-name">React 19</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">TypeScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">MongoDB</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Vite</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK START -->
+        <section id="quick-start" class="quick-start section-padding">
+            <div class="container">
+                <div class="cta-card glass text-center fade-in-up">
+                    <h2>Ready to organize your collection?</h2>
+                    <p>Get up and running in less than 2 minutes.</p>
+                    
+                    <div class="code-block-wrapper">
+                        <pre><code id="install-code">git clone https://github.com/Jeanball/musivault.git
+cd musivault
+docker compose up -d</code></pre>
+                        <button class="btn-copy" aria-label="Copy code">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="https://github.com/Jeanball/musivault" class="btn btn-primary btn-lg">View Full Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <div class="footer-logo">
+                <img src="assets/logo/icon-musivault.svg" alt="Musivault" width="40">
+                <span>Musivault</span>
+            </div>
+            <p>Made with ❤️ for music collectors everywhere.</p>
+            <div class="social-links">
+                <a href="https://github.com/Jeanball/musivault" target="_blank">GitHub</a>
+                <a href="https://discogs.com" target="_blank">Discogs</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Musivault. MIT License.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
